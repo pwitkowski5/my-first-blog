@@ -25,7 +25,7 @@ SECRET_KEY = 'yv*s8vvn@28a7^325vr2t8$hz-kt$(cq_cln5br6ni=qllt5ek'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pwitkowski5.pythonanywhere.com']
 
 
 # Application definition
@@ -102,3 +102,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'public', 'static')
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
